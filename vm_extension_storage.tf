@@ -10,7 +10,7 @@ resource "azurerm_storage_account" "st_diag" {
     network_rules {
              #virtual_network_subnet_ids = [var.MD_SUBNET_ID]
              bypass = ["AzureServices"] #to be one of [AzureServices Logging Metrics None]
-             default_action   = "Deny"
+             default_action   = "Allow"
         }
     lifecycle {
             ignore_changes = [
