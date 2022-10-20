@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "st_diag" {
              default_action   = "Allow"
         }
     tags = var.MD_ALL_TAGS 
-  }
+  
 }
 
 
