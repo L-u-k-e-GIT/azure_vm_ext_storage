@@ -12,10 +12,7 @@ resource "azurerm_storage_account" "st_diag" {
              bypass = ["AzureServices"] #to be one of [AzureServices Logging Metrics None]
              default_action   = "Allow"
         }
-    lifecycle {
-            ignore_changes = [
-             tags
-            ]
+    tags = var.MD_ALL_TAGS 
   }
 }
 
