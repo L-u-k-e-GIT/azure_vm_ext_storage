@@ -46,6 +46,8 @@ variable "MD_SUBSCRIPTION_PREFIX" {
  default = ""
 }
 
-
+variable "MD_ALL_TAGS" { 
+default = ""
+}
 
  
